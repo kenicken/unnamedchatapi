@@ -1,0 +1,28 @@
+<html>
+<meta charset="UTF-8">
+<script type="text/javascript" src="../scripts/JS/utility.js"></script>
+<script type="text/javascript" src="friend_handle.js"></script>
+
+<!-- Javascript below is custom and isn't necessarily needed for this function to work -->
+
+<script type="text/javascript" src="user_lister.js"></script>
+
+<script>
+	element.add("list_friend", "select");
+</script>
+
+<body>
+ 	
+ 	<!-- This is a sample -->
+	<form action="friend_handle.php" method="post" enctype="multipart/form-data">
+		<label for="uid">Name of your friend: </label>
+		<select id="list_friend" name="list_friend"></select>
+		<input type="submit" name="submit" value="Submit" style="width: 100px;"  ></input>
+	</form>
+
+	<script>
+		fetch_friends();
+	</script>
+
+</body>
+</html>

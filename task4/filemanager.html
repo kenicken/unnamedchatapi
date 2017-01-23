@@ -1,0 +1,29 @@
+<html>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<link rel="stylesheet" type="text/css" href="filemanager.css">
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta charset="UTF-8">
+<script type="text/javascript" src="../scripts/JS/utility.js"></script>
+<script type="text/javascript" src="filemanager.js"></script>
+<body>
+
+	<div id="filemanarea">
+
+		<div id="status_bar">
+			<p class="unselected" style="display:inline; vertical-align: middle !important; margin-left: 10px;">Options:</p>
+			<form id="optionlist" action="../scripts/PHP/logout.php" method="get">
+				<input type="submit" id="logoutbutton" name="type" onclick="fade('chatplace', 100, 0, 500); get_e('logoutbutton').display = 'none'; get_e('logoutbutton').value='filemanager';" value="Log Out">
+			</form>
+		</div>
+
+		<div id="properties_bar"></div>
+		<div id="main_bar"></div>
+		<div id="options_bar"></div>
+
+	</div>
+	
+	<script>fade("filemanarea", 0, 100, 500);</script>
+
+</body>
+</html>

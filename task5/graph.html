@@ -1,0 +1,104 @@
+<html>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<link rel="stylesheet" type="text/css" href="graph.css">
+<script type="text/javascript" src="../scripts/JS/utility.js"></script>
+<script type="text/javascript" src="../scripts/JS/domready.js"></script>
+<script type="text/javascript" src="graph.js"></script>	
+
+<body>
+	
+	<div class="selectionSection" id="selectionSection">
+		
+		<fieldset class="fieldSet">
+		<legend class="legend">Graph Data</legend>
+		<table>
+			<tr>
+				<td><div class="labelSection">Title: </div></td>
+				<td><input class="valueAdder" id="titleAdder" 
+					placeholder="Graph Title"></td>
+			</tr>
+			<tr>
+				<td><div class="labelSection">Range: </div></td>
+				<td><input class="valueAdder" id="rangeAdder" 
+					placeholder="Graph Range"></td>
+			</tr>
+			<tr>
+				<td><div class="labelSection">Type: </div></td>
+				<td>
+					<select class="selectField" id="graphType">
+						<option value=0>Line Graph</option>
+						<option value=1>Bar Graph</option>
+						<option value=2>Pie Graph</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><div class="labelSection">Settings: </div></td>
+				<td>
+					<hr>
+					<input type="checkbox" id="showSubTitleOption"/> 
+					<p style="font-size: 8pt; display:inline;">Show Graph SubTitle</p>
+					<input class="valueAdder" id="graphSubTitleAdder" 
+					placeholder="Graph Sub Title">
+					<hr>
+				</td>
+				
+			</tr>
+			<tr>
+				<td colspan="2" style="padding-left: 100px; padding-top: 15px;">
+					<div class="submitButton" id="submitButton">Apply</div>
+				</td>
+			</tr>
+		</table>
+
+		</fieldset>
+
+		<fieldset class="fieldSet">
+		<legend class="legend">Class Data</legend>
+		<table>
+			<tr>
+				<td><div class="labelSection">Name: </div></td>
+				<td><input class="valueAdder" id="nameAdder"
+					placeholder="Data Name"></td>
+			</tr>
+			<tr>
+				<td><div class="labelSection">Value: </div></td>
+				<td><input class="valueAdder" id="valueAdder"
+					placeholder="Data Value"></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="padding-left: 15px; padding-top: 15px;">
+					<div class="submitButton" id="addButton">Add</div>
+					<div class="submitButton" id="clearButton">Clear</div>
+				</td>
+			</tr>
+		</table>
+		</fieldset>
+
+		<fieldset class="fieldSet fieldExplorer">
+		<legend class="legend">Class Explorer</legend>
+		<div class="classExplorerContainer" id="classExplorerContainer">
+			<table class="classExplorer">
+				<tr>
+					<th>Name</th>
+					<th>Value</th>
+					<th>Commands</th>
+				</tr>
+				<tr>
+					<td colspan=3>
+						No Data...
+					</td>
+				</tr>
+			</table>
+		</div>
+		</fieldset>
+
+	</div>
+	
+	<div class="graphSection" id="graphSection">
+		<canvas id="graphDrawSection" width="100" height="100"></canvas>
+	</div>
+	
+</body>
+</html>

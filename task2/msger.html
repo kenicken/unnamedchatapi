@@ -1,0 +1,75 @@
+<html>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<link rel="stylesheet" type="text/css" href="msger.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta charset="UTF-8">
+<script type="text/javascript" src="../scripts/JS/utility.js"></script>
+<script type="text/javascript" src="base.js"></script>
+
+<!-- IE 8 and lower Hack -->
+<!--[if lt IE 9]>
+	<style>
+	#optionposter, #chatfield, #userfield, #inputfield, #submitbutton, #chatfield td
+	{
+		border: 1px solid black;
+	}
+	</style>
+<![endif]-->
+
+	<!-- Register Elements -->
+
+		<script>
+			element.add('shortcutkey', 'checkbox'); 
+			element.add('chatfield', 'div');
+			element.add('inputfield', 'textarea');
+			element.add('tt', 'paragraph');
+			element.add('userfield', 'div');
+			element.add('chatfield', 'div');
+			element.add('submitbutton', 'input');
+			
+			// Startup
+			
+			
+		</script>
+
+	<!-- End -->
+
+<body>
+
+	<div id="chatplace">
+
+		<div id="optionposter">
+			<input type="checkbox" id="shortcutkey" onclick="Client.message.ready(); Client.hideSubmitButton();" Value="Enter">Enter Key Shortcut</input>
+			<p style="display:inline; vertical-align: middle !important; margin-left: 50px;">Options:</p>
+			<form id="optionlist" action="../scripts/PHP/logout.php" method="get">
+				<input type="submit" id="logoutbutton" onclick="fade('chatplace', 100, 0, 500); get_e('logoutbutton').display = 'none'; get_e('logoutbutton').value='messenger';" name="type" Value="Log Out">
+			</form>
+		</div>
+		
+		<div id="chatfield">
+
+		</div>
+		<div id="userfield">
+
+		</div>
+
+		<form id="messageposter" onsubmit="return Client.message.submit()" method="post">
+			<textarea type="text" id="inputfield" onclick="Client.message.ready()" onfocus="Client.message.ready()" onkeydown="Client.message.onhit(event)"></textarea>
+			<input type="submit" id="submitbutton" name="submit" value="Submit">
+		</form>
+
+	</div>
+
+	<script>
+		//Choosing elements
+		fade('chatplace', 0, 100, 500);
+		Client.fetch.session();
+		Client.option.choose_element('shortcutkey');
+		Client.response_action.onload_activity();
+		Client.hideSubmitButton("no-animate");
+	</script>
+
+</body>
+</html>

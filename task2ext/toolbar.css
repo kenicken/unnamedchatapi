@@ -1,0 +1,66 @@
+.userlist
+{
+	-moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-top: 10px;
+}
+
+.friendlist_design {
+	display: block;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.titleBar:hover
+{
+	cursor: default;
+}
+
+.tbm_base
+{
+	text-align: center;
+	padding: 5px;
+	border: 1px solid black;
+	text-align: center;
+	margin: 2px;
+	display: block;
+	height: 60px;
+}
+
+.tbm_Online
+{
+	background-color: #85E085;
+}
+
+.tbm_Online:hover
+{
+	background-color: #B6ECB6
+}
+
+.tbm_Online:active
+{
+	background-color: #5D9D5D;
+}
+
+.tbm_Offline
+{
+	background-color: #FF8080;
+}
+
+.tbm_Offline:hover
+{
+	background-color: #FFB3B3;
+}
+
+.tbm_Offline:active
+{
+	background-color: #B25A5A;
+}
+
+.tbm_Online:hover, .tbm_Offline:hover
+{
+	cursor: pointer;
+}

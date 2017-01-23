@@ -1,0 +1,12 @@
+Please modify details from line 170 - 171 depending on the configuration of the system.
+
+Localhost (Nanami-PC)
+	
+	$ROOT_UNAME = "serverManager";
+  	$ROOT_PASS  = "asdasd123";
+
+Redhat (Openshift)
+
+	$ROOT_UNAME = "dragonBoy123";
+  	$ROOT_PASS  = "";
+

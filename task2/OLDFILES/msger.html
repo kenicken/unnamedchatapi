@@ -1,0 +1,35 @@
+<html>
+<script type="text/javascript" src="call.js"></script> <!-- AJAX Script for modifying Message TextArea --> 
+
+
+<body onload="start('idfield','targfield', 'msglistfield')">
+	
+	<center>
+	<p id="cnt">00</p>
+	<label> Message History:  </label> <br>
+	<textarea readonly=true rows="20" cols="80" name="msglist" id="msglistfield" ></textarea>	
+	
+	<br> <br> <br>
+	
+	<!-- Make sure that onSentMessage id's are covered 
+	  in apostrophe, or else the behavior is undefined -->
+	
+	<form onsubmit="return PMfunc('idfield','targfield', 'txtmsgfield');" method="post">
+		<label for="id"> ID Number: </label>
+		<input type="text" size="8" name="id" id="idfield" placeholder="ID Number" onchange="notifyidchange('msglistfield', 'unamefield', 'idfield')"></input>
+		&nbsp &nbsp
+		<label for="targ"> Target ID: </label>
+		<input type="text" size="8" name="targ" id="targfield" placeholder="ID Number" onchange="notifytargchange('msglistfield', 'targfield')"></input>
+		&nbsp &nbsp
+		
+		<br><br>
+		<label for="uname"> Username:  </label>
+		<input readonly=true type="text" size="10" name="uname" id="unamefield" placeholder="Username" ></input>
+		<input type="text" name="txtmsg" id="txtmsgfield" placeholder="Text Message Here" ></input> 
+		<input type="submit" name="submit" value="Submit"> </input>
+	</form>
+	<input type="button" value="Switch ID" onclick="SWfunc('idfield','targfield', 'unamefield')" >
+	</center>
+
+</body>
+</html>

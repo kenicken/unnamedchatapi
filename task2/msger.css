@@ -1,0 +1,352 @@
+html
+{
+	height: 96%;
+}
+
+body
+{
+	height: 100%;
+	background-color: white;
+}
+
+#chatplace
+{
+	height: 90%;
+	width: 95%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	-moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#chatplace:hover
+{
+	cursor: default;
+}
+
+
+#chatfield
+{
+	height: 90%;
+	 width: 80%;
+	overflow-y: scroll;
+   	display: inline-block;
+   	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 13px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 13px rgba(50, 50, 50, 0.75);
+}
+
+#userfield
+{
+	height: 90%;
+	 width: 18%;
+	overflow-y: scroll;
+	display: inline-block;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 13px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 13px rgba(50, 50, 50, 0.75);
+}
+
+#messageposter
+{
+	display: block;
+	height: 10%;
+	margin-top: 0.3%;
+	margin-bottom: 1%;
+}
+
+#inputfield
+{
+	height: 100%;
+	width: 90%;
+	text-align: left;
+	vertical-align: text-top;
+    float: left;
+    display: block;
+    margin-right: 5px;
+    color: rgba(0, 0, 0, 0.87);
+    border: 0px solid black;
+	font-family: arial;
+	font-weight: bold;
+	text-shadow: 0px 0px 5px rgba(65, 72, 67, 0.66);
+	padding: 5px;
+	overflow: auto;
+	font-size: 11pt;
+    resize: none; 				/* To make it not resizable on firefox, chrome and etc */
+    -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 13px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 13px rgba(50, 50, 50, 0.75);
+}
+
+#submitbutton
+{
+	height: 100%;
+	width: 7.5%;
+	display: block;
+	padding: 5px;
+	border: 0px solid black;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 13px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 13px rgba(50, 50, 50, 0.75);
+}
+
+.my_message
+{
+	text-align: left;
+	margin-left: 15px;
+}
+
+.their_message
+{
+	text-align: right;
+	margin-right: 15px;
+}
+
+.my_message_box
+{
+	background-color: #80ffaa;
+}
+
+.their_message_box
+{
+	background-color: #b3b3cc;
+}
+
+.chat_log
+{
+	color: rgba(0, 0, 0, 0.87);
+	display: block;
+	font-family: arial;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#optionposter
+{
+	height: 5%;
+	width: 97.5%;
+	color: rgba(0, 0, 0, 0.87);
+    border: 0px solid black;
+	font-family: arial;
+	font-weight: bold;
+	text-shadow: 0px 0px 5px rgba(65, 72, 67, 0.66);
+	padding: 5px;
+	font-size: 11pt;
+    margin-bottom: 10px;
+    -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 13px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 13px rgba(50, 50, 50, 0.75);
+}
+
+#optionlist
+{
+	display: inline;
+}
+
+#shortcutkey
+{
+	float: left;
+}
+
+#logoutbutton
+{
+	display: inline;
+}
+
+tr.chat_log:hover
+{
+
+}
+
+.time_style
+{
+	text-align: center;
+	padding: 5px;
+	min-width: 100px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	display: inline-block;
+	text-shadow: 0px 0px 5px rgba(65, 72, 67, 0.66);
+	margin-bottom: 5px;
+}
+
+.uname_style
+{
+	text-align: center;
+	min-width: 1px;
+	padding: 5px;
+	display: inline-block;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	text-shadow: 0px 0px 5px rgba(65, 72, 67, 0.66);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;	
+}
+
+.msg_style
+{
+	display: inline-block;
+	padding: 35px;	
+	padding-top: 15px;
+	padding-left: 15px;
+	width: 40%;
+	text-shadow: 0px 0px 5px rgba(65, 72, 67, 0.66);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	word-wrap: break-word;
+
+	margin-left: 20px;
+	margin-right:20px;
+}
+
+.Online
+{
+	text-align: center;
+	background-color: #2cff2c;
+	color: black;
+	-webkit-box-shadow: 0px 0px 5px rgba(0, 255, 88, 0.75);
+	-moz-box-shadow:    0px 0px 5px rgba(0, 255, 88, 0.75);
+	box-shadow:         0px 0px 5px rgba(0, 255, 88, 0.75);
+}
+
+.Online:hover
+{
+	text-shadow: -1px -1px 1px rgba(79, 88, 79, 1);
+	background-color: #96ff96;
+}
+
+.Offline
+{
+	text-align: center;
+	background-color: #ff2c2c;
+	color: white;
+	-webkit-box-shadow: 0px 0px 5px rgba(255, 0, 50, 0.75);
+	-moz-box-shadow:    0px 0px 5px rgba(255, 0, 50, 0.75);
+	box-shadow:         0px 0px 5px rgba(255, 0, 50, 0.75);
+	word-wrap: break-word;
+}
+
+.Offline:hover
+{
+	text-shadow: -1px -1px 1px rgba(79, 88, 79, 1);
+	background-color: #ff9696;
+}
+
+.Group
+{
+	text-align: center;
+	background-color: #aaaaaa;
+	color: white;
+	-webkit-box-shadow: 0px 0px 5px rgba(255, 120, 50, 0.75);
+	-moz-box-shadow:    0px 0px 5px rgba(255, 120, 50, 0.75);
+	box-shadow:         0px 0px 5px rgba(255, 120, 50, 0.75);
+	word-wrap: break-word;
+}
+
+.Group:hover
+{
+	text-shadow: -1px -1px 1px rgba(79, 88, 79, 1);
+	background-color: #cccccc;
+}
+
+.user_field
+{
+	font-family: arial;
+	font-weight: bold;
+	background-color: white;
+	color: #333333;
+}
+
+
+.status_field
+{
+	text-shadow: -1px -1px 1px rgba(79, 88, 79, 1);
+}
+
+.Selected
+{
+	text-align: center;
+	background-color: white;
+	-webkit-box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 13px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 13px rgba(50, 50, 50, 0.75);
+}
+
+.friend_class
+{
+	/*background-color: black;*/
+	width: 95%;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(0, 0, 0, 0);
+	-webkit-box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 13px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 13px rgba(50, 50, 50, 0.75);
+}
+
+.friendrequest a
+{
+	font-weight: bold;
+	color: #4C004C;
+	text-decoration: none;
+	border-bottom: 1px dashed #280028;
+}
+
+.friendrequest a:hover
+{
+	color: #9A009A;
+	border-bottom: 1px dashed #580058;
+}
+
+.friend_req
+{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-color: white;
+	text-shadow: -1px -1px 1px rgba(0, 0, 55, 1);
+	-webkit-box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 13px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 13px rgba(50, 50, 50, 0.75);
+}
+
+.friend_req a
+{
+	color: #00003B;
+	text-decoration: none;
+}
+
+.friend_req a:hover
+{
+	color: #0000FF;
+	text-decoration: none;
+	border-bottom: 1px dashed #00003B;
+}			

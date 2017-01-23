@@ -1,0 +1,42 @@
+********************************************************
+*  This file represents the list of file  extensions   *
+*  the file uploader will recognize and be allowed to  *
+*  be used.                                            *
+*                                                      *
+*  Example                                             *
+*                                                      *
+*    BEGIN                                             *
+*	.txt	                                       *
+*       .doc                                           *
+*       .docx                                          *
+*       .xls 					       *
+*       .pdf   					       *
+*    END                                               *
+*                                                      *
+********************************************************
+********************************************************
+
+BEGIN
+	.txt
+	.doc
+	.docx
+	.xls
+	.pdf
+	.odt
+	.zip
+	.rar
+	.psd
+	.xcf
+	.png
+	.jpg
+	.jpeg
+	.mp3
+	.ppt
+	.pptx
+	.apk
+	.exe
+	.001
+	.002
+	.003
+	.004
+END

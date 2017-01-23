@@ -1,0 +1,183 @@
+.buttonChat {
+
+	position: fixed;
+
+	display: block;
+	text-align: center;
+	background: blue;
+	border: 2px solid blue;
+	border-radius: 0px;
+	width: 50px;
+	height: 50px;
+
+	font-size: 18pt;
+	font-weight: bolder;
+	color: white;
+
+	transition: 0.3s;
+
+
+
+	-webkit-box-shadow: 4px 10px 84px -23px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 10px 84px -23px rgba(0,0,0,0.75);
+	box-shadow: 4px 10px 84px -23px rgba(0,0,0,0.75);
+}
+
+.buttonChat:hover {
+
+	background: lightblue;
+}
+
+.showFriends_base {
+
+	display: table;
+	height: 50px;
+	width: 50px;
+}
+
+.showFriends_text {
+
+	display: table-cell;
+	text-shadow: 0px 0px 6px rgba(150, 150, 150, 1);
+	cursor: default;
+
+	vertical-align: middle;
+	user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+}
+
+.msg_style
+{
+	display: inline-block;
+	padding: 35px;	
+	padding-top: 15px;
+	padding-left: 15px;
+	width: 40%;
+	text-shadow: 0px 0px 5px rgba(65, 72, 67, 0.66);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	word-wrap: break-word;
+
+	margin-left: 20px;
+	margin-right:20px;
+}
+
+.my_message
+{
+	text-align: right;
+	margin-left: 15px;
+}
+
+.their_message
+{
+	text-align: left;
+	margin-right: 15px;
+}
+
+.my_message_box
+{
+	background-color: #80ffaa;
+}
+
+.their_message_box
+{
+	
+	background-color: #b3b3cc;
+}
+
+#inputBox
+{
+	float: left;
+	text-align: left;
+	vertical-align: text-top;
+    display: block;
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.87);
+    border: 0px solid black;
+	font-family: arial;
+	font-weight: bold;
+	text-shadow: 0px 0px 5px rgba(65, 72, 67, 0.66);
+	padding: 5px;
+	overflow: auto;
+	font-size: 11pt;
+    resize: none; 				/* To make it not resizable on firefox, chrome and etc */
+    margin-left: 10px;
+
+    -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 13px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 13px rgba(50, 50, 50, 0.75);
+}
+
+#inputSend
+{
+	vertical-align: middle;
+    border: 0px solid black;
+	font-family: arial;
+	font-weight: bold;
+	background-color: rgb(255, 255, 255);
+	text-shadow: 0px 0px 5px rgba(65, 72, 67, 0.66);
+	padding: 5px;
+	overflow: auto;
+	font-size: 11pt;
+    resize: none; 				/* To make it not resizable on firefox, chrome and etc */
+    margin-left: 10px;
+    transition: 0.5s;
+
+    -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 13px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 13px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 13px rgba(50, 50, 50, 0.75);
+
+}
+
+#inputSend:hover
+{
+	background-color: grey;
+}
+
+.grp_sts_shape {
+
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	border-radius: 50px;
+}
+
+.grp_header_icon {
+
+	display: table-cell;
+	width: 40px;
+	height: 40px;
+	border-radius: 50px;
+	background-color: yellow;
+	vertical-align: middle;
+}
+
+.grp_name_header {
+
+	display: inline-block;
+}
+
+.grp_mem_off {
+
+	background-color: red;
+}
+
+.grp_mem_onl {
+
+	background-color: green;
+}
+
+.grp_mem_idl {
+
+	background-color: yellow;
+}

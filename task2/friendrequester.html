@@ -1,0 +1,26 @@
+<html>
+
+<script type="text/javascript" src="../scripts/JS/utility.js"></script>
+<script type="text/javascript" src="friend_handle.js"></script>
+<script type="text/javascript" src="user_lister.js"></script>
+
+<script>
+	element.add("list_requester", "select");
+</script>
+
+<body>
+
+	<form action="friendrequester.php" method="post" enctype="multipart/form-data">
+
+		<label>Name of Friend: </label>
+		<select id="list_requester" name="list_requester"></select>
+		<input type="submit" name="option" value="Accept" style="width: 100px;"  ></input>
+		<input type="submit" name="option" value="Decline" style="width: 100px;"  ></input>
+	</form>
+
+	<script>
+		fetch_friends_request();
+	</script>
+
+</body>
+</html>

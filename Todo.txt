@@ -1,0 +1,4 @@
+To Do List.
+
+Make each web application rely on a single, consolidated user.php and client.php file.
+Finish Designing File Manager.

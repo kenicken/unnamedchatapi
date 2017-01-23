@@ -1,0 +1,7 @@
+ #!bin/bash
+ sudo chown nobody /var/www
+ sudo chgrp nogroup /var/www
+ sudo chmod 777 /var/www
+ sudo chmod g+s /var/www
+ 
+ 

@@ -1,0 +1,102 @@
+<html>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<link rel="stylesheet" type="text/css" href="graph.css">
+<script type="text/javascript" src="../scripts/JS/utility.js"></script>
+<script type="text/javascript" src="../scripts/JS/domready.js"></script>
+<script>
+	var dataSource = "";
+	var index	   = "";
+
+	var dataUpdate = function(dataName, dataVal) {
+
+		get_e("nameAdder").value = dataName;
+		get_e("valueAdder").value = dataVal;
+
+	}
+
+	var clearAll = function () {
+
+		get_e("nameAdder").value =  "";
+		get_e("valueAdder").value = "";
+	}
+
+	var switchLayout = function (e) {
+
+		e = e || event;
+			
+
+ 		if (e.keyCode === 13) {
+
+ 			get_e('valueAdder').focus();
+ 		}
+	}
+
+	var submit = function() {
+
+		window.opener.graphGenerator.graphFunction.variables.applyEdit(index, 
+			get_e("nameAdder").value, get_e("valueAdder").value);
+	}
+
+	var sendLayout = function(e) {
+
+		e = e || event;
+
+		if (((e.charCode <= 47 || e.charCode >= 58)) &&
+			e.keyCode != 8) {
+
+			if (e.preventDefault) {
+				e.preventDefault();
+			} else {
+				e.returnValue = false;
+			}
+		}
+
+		if (e.keyCode === 13) {
+
+			submit();
+		}
+	}
+
+</script>
+<body>
+	<div style="margin: 0 auto; bdisplay: block; width: 245px;">
+		<table>
+			<tr>
+				<td><div class="labelSection">Name: </div></td>
+				<td><input class="valueAdder" id="nameAdder"
+					placeholder="Data Name"></td>
+			</tr>
+			<tr>
+				<td><div class="labelSection">Value: </div></td>
+				<td><input class="valueAdder" id="valueAdder"
+					placeholder="Data Value"></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="padding-left: 70px; padding-top: 15px;">
+					<div class="submitButton" id="updateButton">Update</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+	
+	<script>
+		try {
+
+			dataSource = window.opener.graphGenerator.graphFunction.variables.data;
+			index	   = window.opener.graphGenerator.graphFunction.variables.temporary.selectedIndex;
+			dataUpdate(dataSource[index].name, dataSource[index].value);
+			window.document.title = "Edit " + dataSource[index].name;
+			get_e("nameAdder").onkeypress  = switchLayout;
+			get_e("valueAdder").onkeypress = sendLayout;
+			get_e("updateButton").onclick  = submit;
+
+		}
+		catch (exception) {
+
+			window.document.title = "Error: Invalid Referrer";
+			alert("Error: This HTML page should be opened by graph.html");
+		}
+	</script>
+</html>
